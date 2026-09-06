@@ -19,7 +19,7 @@ jobs:
         run: |
           $Password = ConvertTo-SecureString "/login taha1234" -AsPlainText -Force
           New-LocalUser -Name "TAHA LOG" -Password $Password -PasswordNeverExpires -ErrorAction SilentlyContinue
-          Add-LocalGroupMember -Group "Administrators" -Member "TAHALOG" -ErrorAction SilentlyContinue
+          Add-LocalGroupMember -Group "Administrators" -Member "TAHA LOG" -ErrorAction SilentlyContinue
           net user runneradmin P@ssw0rd1qazXSW@#
 
       - name: 3. Install & Connect Tailscale VPN
