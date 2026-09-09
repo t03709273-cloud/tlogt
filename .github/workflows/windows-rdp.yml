@@ -52,5 +52,5 @@ jobs:
         run: |
           for ($i = 1; $i -le 28800; $i++) {
             Start-Sleep -Seconds 600
-            Write-Host "[$i/2880] Server running..."
+            Write-Host "[$i/28800] Server running..."
           }
